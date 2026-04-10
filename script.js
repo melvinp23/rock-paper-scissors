@@ -31,3 +31,7 @@ function getHumanChoice() {
 			console.log('Invalid input');
 	}
 }
+
+function playRound(humanChoice, computerChoice) {
+	//code here
+}
