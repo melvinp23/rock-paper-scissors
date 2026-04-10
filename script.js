@@ -4,7 +4,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playGame() {
-	// Player prompt on choosing between rock, paper, or scissors
+	// Player prompt between rock, paper, or scissors
 	function getHumanChoice() {
 		const choice = prompt('Rock, paper, or scissors?');
 		// Set player prompt to case insensitive
@@ -27,7 +27,7 @@ function playGame() {
 		return choice;
 	}
 
-	// Computer random choice between rock, paper, or scissors
+	// Computer randomly choose between rock, paper, or scissors
 	function getComputerChoice() {
 		const choice = Math.floor(Math.random() * 3);
 		if (choice === 0) {
@@ -40,7 +40,7 @@ function playGame() {
 		return choice;
 	}
 
-	// Single round of rock paper scissors
+	// Game rules of rock paper scissors
 	function playRound(humanChoice, computerChoice) {
 		if (humanChoice === 'rock' && computerChoice === 0) {
 			console.log(`It's a tie! Pick Again`);
@@ -89,13 +89,15 @@ function playGame() {
 			console.log(`----------------`);
 		}
 	}
-
+	// Assign human choice and computer choice to a variable
 	const humanSelection = getHumanChoice();
 	const computerSelection = getComputerChoice();
 
+	// Execute rock paper scissors logic
 	playRound(humanSelection, computerSelection);
 }
 
+// Loop game for 5 rounds
 for (i = 0; i < 5; i++) {
 	playGame();
 }
