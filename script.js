@@ -1,6 +1,9 @@
+// Initialize player score
 let humanScore = 0;
+// Initialize computer score
 let computerScore = 0;
 
+// Computer random choice of rock, paper, or scissors
 function getComputerChoice() {
 	const choice = Math.floor(Math.random() * 3);
 	switch (choice) {
@@ -15,6 +18,7 @@ function getComputerChoice() {
 	}
 }
 
+// Player prompt on choosing between rock, paper, or scissors
 function getHumanChoice() {
 	const choice = prompt('Rock, paper, or scissors?');
 	switch (choice) {
@@ -32,6 +36,7 @@ function getHumanChoice() {
 	}
 }
 
+// Single round of rock paper scissors
 function playRound(humanChoice, computerChoice) {
 	//code here
 }
