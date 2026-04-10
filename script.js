@@ -89,9 +89,3 @@ function playGame() {
 for (i = 0; i < 5; i++) {
 	playGame();
 }
-/*
-To-do:
-- Case sensitive prompt /
-- Tally score
-- Limit Rounds to 5 Rounds
-*/
