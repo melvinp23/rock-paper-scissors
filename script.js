@@ -11,3 +11,20 @@ function getComputerChoice() {
 			console.log('Scissors');
 	}
 }
+
+function getHumanChoice() {
+	const choice = prompt('Rock, paper, or scissors?');
+	switch (choice) {
+		case 'Rock':
+			console.log('You chose rock');
+			break;
+		case 'Paper':
+			console.log('You chose paper');
+			break;
+		case 'Scissor':
+			console.log('You chose scissor');
+			break;
+		default:
+			console.log('Invalid input');
+	}
+}
