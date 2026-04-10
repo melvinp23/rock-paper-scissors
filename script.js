@@ -6,15 +6,19 @@ let computerScore = 0;
 // Player prompt on choosing between rock, paper, or scissors
 function getHumanChoice() {
 	const choice = prompt('Rock, paper, or scissors?');
-	switch (choice) {
-		case 'Rock':
+	// Set player prompt to case insensitive
+	switch (choice.toLowerCase()) {
+		case 'rock':
 			console.log('Rock');
 			break;
-		case 'Paper':
+		case 'paper':
 			console.log('Paper');
 			break;
-		case 'Scissors':
+		case 'scissors':
 			console.log('Scissors');
+			break;
+		case '':
+			console.log('Invalid input');
 			break;
 		default:
 			console.log('Invalid input');
