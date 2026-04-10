@@ -45,38 +45,48 @@ function playGame() {
 		if (humanChoice === 'rock' && computerChoice === 0) {
 			console.log(`It's a tie! Pick Again`);
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'rock' && computerChoice === 1) {
 			console.log(`You Lose! Paper beats Rock.`);
 			computerScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'rock' && computerChoice === 2) {
 			console.log(`You Win! Rock beats Scissors.`);
 			humanScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'paper' && computerChoice === 0) {
 			console.log(`You Win! Paper beats Rock.`);
 			humanScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'paper' && computerChoice === 1) {
 			console.log(`It's a tie! Pick Again`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'paper' && computerChoice === 2) {
 			console.log(`You Lose! Scissor beats Paper.`);
 			computerScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'scissors' && computerChoice === 0) {
 			console.log(`You Lose! Rock beats Scissors.`);
 			computerScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'scissors' && computerChoice === 1) {
 			console.log(`You Win! Scissors beats Paper.`);
 			humanScore++;
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else if (humanChoice === 'scissors' && computerChoice === 2) {
 			console.log(`It's a tie! Pick Again`);
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		} else {
 			console.log('Invalid input! Pick again.');
 			console.log(`Computer: ${computerScore}, Player: ${humanScore}`);
+			console.log(`----------------`);
 		}
 	}
 
