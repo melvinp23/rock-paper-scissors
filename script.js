@@ -4,7 +4,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playGame() {
-	// Player prompt between rock, paper, or scissors
+	// Player prompted between rock, paper, or scissors
 	function getHumanChoice() {
 		const choice = prompt('Rock, paper, or scissors?');
 		// Set player prompt to case insensitive
